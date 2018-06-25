@@ -12,7 +12,7 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-    return queryInterface.bulkInsert('todo', [
+    return queryInterface.bulkInsert('todos', [
       {text: 'write code!', complete: false, createdAt: new Date(), updatedAt: new Date()},
       {text: 'be happy!', complete: false, createdAt: new Date(), updatedAt: new Date()},
 
@@ -27,6 +27,6 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('Person', null, {});
     */
-    return queryInterface.bulkDelete('todo', null, {truncate:true});
+    return queryInterface.bulkDelete('todos', null, {truncate:true});
   }
 };

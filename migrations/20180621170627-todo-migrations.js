@@ -11,19 +11,26 @@ module.exports = {
     */
     return queryInterface.createTable('todos', {
       id: {
-
+        type: Sequelize.UUID,
+        primaryKey: true,
+        defaultValue: Sequelize.UUIDV4,
+        allowNull: false
       },
       text: {
-
+        type: Sequelize.STRING,
+        allowNull: false
       },
       complete: {
-
+        type: Sequelize.BOOLEAN,
+        defaultValue: false
       },
       createdAt: {
-
+        allowNull: false,
+        type: Sequelize.DATE
       },
       updatedAt: {
-        
+        allowNull: false,
+        type: Sequelize.DATE
       }
     })
   },

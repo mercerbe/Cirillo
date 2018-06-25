@@ -12,7 +12,7 @@ module.exports = {
         isBetaMember: false
       }], {});
     */
-    return queryInterface.bulkInsert('users' [
+    return queryInterface.bulkInsert('users', [
       {email: '123@gmail.com', password: '1234567890', createdAt: new Date(), updatedAt: new Date()},
       {email: '456@gmail.com', password: '1234567890', createdAt: new Date(), updatedAt: new Date()},
       {email: '789@gmail.com', password: '1234567890', createdAt: new Date(), updatedAt: new Date()}
@@ -27,6 +27,6 @@ module.exports = {
       Example:
       return queryInterface.bulkDelete('Person', null, {});
     */
-    return queryInterface.bulkDelete('users' null, {})
+    return queryInterface.bulkDelete('users', null, {})
   }
 };

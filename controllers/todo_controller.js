@@ -1,16 +1,21 @@
 //dependencies
 const express = require('express');
 //router
-const router = express.Router();
+const todoRouter = express.Router();
 const models = require('../models');
 
-//main page
-router.get('/', (req, res) => {
+//sequelize connection
+const sequelizeConnection = models.sequelize;
+sequelizeConnection.sync();
+
+//----------Routes--------------//
+// //main page
+todoRouter.get('/', (req, res) => {
   res.redirect('/index')
 })
 
 //all todos
-router.get('/', (req, res) => {
+todoRouter.get('/', (req, res) => {
   models.Todo.findAll({})
     .then((userTodos) => {
       let obj = { Todo: userTodos}
@@ -21,4 +26,4 @@ router.get('/', (req, res) => {
 
 
 //exports
-module.exports = router;
+module.exports = todoRouter;
