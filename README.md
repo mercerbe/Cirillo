@@ -5,13 +5,13 @@ Node | Express | sequelize | Handlebars
 
 ## Description
 
-This full stack app allows users to sign up and track thier to-dos while working with a Pomodoro timer for increased productivity.
+This full stack app allows users to sign up and track their to-dos while working with a Pomodoro timer for increased productivity.
 
 Any user may sign up with valid login information and begin using the timer. If a user is logged in, the items on thier to-do list will be store in a database for retrieval when they log back in. Users can add todos, edit them, and delete items.
 
 ## Demo
 
-You can demo this web app on heroku at:  [Cirillo](https://google.com).
+You can demo this web app on heroku at:  [Cirillo](https://floating-hamlet-62187.herokuapp.com/.
 
 ## Installation
 
