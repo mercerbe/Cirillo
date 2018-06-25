@@ -1,25 +1,8 @@
 {
   "name": "cirillo",
   "version": "1.0.0",
-  "description": "cirillo timer packages",
+  "description": "none",
   "main": "server.js",
-  "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mercerbe/Cirillo.git"
-  },
-  "keywords": [
-    "timer",
-    "pomodoro"
-  ],
-  "author": "Ben Mercer",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/mercerbe/Cirillo/issues"
-  },
-  "homepage": "https://github.com/mercerbe/Cirillo#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
@@ -30,5 +13,20 @@
     "path": "^0.12.7",
     "sequelize": "^4.38.0",
     "sequelize-cli": "^4.0.0"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mercerbe/Cirillo.git"
+  },
+  "author": "Ben Mercer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mercerbe/Cirillo/issues"
+  },
+  "homepage": "https://github.com/mercerbe/Cirillo#readme"
 }

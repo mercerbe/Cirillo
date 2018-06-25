@@ -2,11 +2,10 @@
 const express = require("express");
 const db = require('./models');
 const bodyParser = require("body-parser");
-const exphbs = require('express-handlebars');
 
 //express setup
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 //static route
 app.use(express.static('public'));
@@ -15,17 +14,11 @@ app.use(express.static('public'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//handlebars view engine
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
-app.set('view engine', 'handlebars');
 
 //-----------------routing----------------------//
 
-//routes to controllers
-const userRouter = require('./controllers/user_controller.js');
-const todoRouter = require('./controllers/todo_controller.js');
-app.use('/', userRouter);
-app.use('/', todoRouter);
+//route to api
+require('./routes/api-routes.js')(app);
 
 
 //--------------sync sequelize server listen--------//
