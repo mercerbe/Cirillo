@@ -11,7 +11,7 @@ Any user may sign up with valid login information and begin using the timer. If 
 
 ## Demo
 
-You can demo this web app on heroku at:  [Cirillo](https://floating-hamlet-62187.herokuapp.com/.
+You can demo this web app on heroku at:  [Cirillo](https://floating-hamlet-62187.herokuapp.com/).
 
 ## Installation
 
